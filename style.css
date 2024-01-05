@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Poppins&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  background-color: white;
+  position: sticky !important;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 3px 5px rgb(237, 240, 237);
+  z-index: 10;
+}
+
+nav .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(3, 39, 49, 0.686) !important;
+}
+
+.nav-link:hover {
+  color: cadetblue !important;
+  border-bottom: 1px solid cadetblue;
+}
+
+nav .navbar-toggler {
+  color: cadetblue;
+  border: none;
+}
+
+nav .navbar-toggler:focus {
+  outline: 1px solid cadetblue;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Home */
+
+#home {
+  top: 50%;
+  position: relative;
+}
+
+#home .home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: cadetblue;
+}
+
+.home img {
+  max-height: 400px;
+  margin-right: 100px;
+  border-radius: 70%;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+.home .icons {
+  padding: 0px 0px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+.home .icons a {
+  color: cadetblue;
+}
+
+.home .icons a:hover {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 576px) {
+  #home .home img {
+    text-align: center;
+    margin-right: 0px;
+    max-height: 300px;
+    border-radius: 50%;
+  }
+}
+
+.home .home-details p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.home .home-details h2 {
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.home .home-details h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  animation: typing 3s steps(22), blink 0.5s step-end alternate;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: cadetblue;
+  }
+}
+
+.home .home-details button {
+  background-color: cadetblue;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  margin: 8px 8px 8px 0px;
+  padding: 3px 5px;
+  border-radius: 3%;
+}
+
+.home .home-details button a {
+  text-decoration: none;
+  color: white;
+}
+
+.home .home-details button i {
+  margin-right: 2px;
+  font-size: 18px;
+}
+
+.home .home-details button:hover {
+  color: cadetblue;
+  background-color: white;
+  border: 1px solid cadetblue;
+}
+.home .home-details button:hover a {
+  color: cadetblue;
+}
+
+/* About */
+
+#about {
+  position: relative;
+}
+
+#about .title h2 {
+  color: cadetblue;
+  /* font-size: 25px; */
+  font-weight: 600;
+}
+
+#about .title p {
+  color: rgba(5, 73, 92, 0.686);
+}
+
+#about img {
+  width: 90%;
+  max-height: 700px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+#about .about-me h1 {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+#about .about-me h6 {
+  color: rgba(5, 73, 92, 0.686);
+
+  margin-bottom: 25px;
+}
+
+#about .about-me {
+  color: cadetblue;
+}
+
+#about .about-me .intro {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: black;
+}
+
+@media screen and (max-width: 400px) {
+  #about .about-me .intro {
+    font-size: 14px;
+    padding: 10px 0px !important;
+  }
+  #about .about-me {
+    padding: 0 !important;
+  }
+}
+#about .about-me .intro span {
+  font-weight: 600;
+}
+#about .about-me .location i {
+  color: rgba(5, 73, 92, 0.686);
+}
+
+#about .about-me .location p:nth-child(3) {
+  color: black;
+  font-size: 14px;
+}
+
+#about .about-me .location p {
+  color: black;
+}
+
+/* Skills */
+#skills {
+  margin: auto 0;
+}
+
+#skills .container {
+  height: 100%;
+  padding-top: 15%;
+}
+
+#skills .skill {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#skills .title h2 {
+  color: cadetblue;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#skills .card {
+  margin-top: 20px;
+  width: 90%;
+
+  border: none;
+
+  background-color: whitesmoke;
+  box-shadow: 0px 3px 5px rgb(237, 240, 237);
+  padding: 20px;
+  height: 30vh;
+  word-break: keep-all;
+}
+
+@media screen and (max-width: 576px) {
+  #skills .card {
+    height: auto;
+    width: 80%;
+    margin-left: 30px;
+  }
+}
+
+#skills .card-title {
+  color: cadetblue;
+  font-size: 23px;
+}
+
+#skills .skill ul {
+  color: black;
+  list-style: none;
+  width: 100%;
+
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 40px;
+}
+
+/* Project */
+
+#project .title h2 {
+  color: cadetblue;
+  /* font-size: 25px; */
+  font-weight: 600;
+}
+
+#project .title p {
+  color: rgba(5, 73, 92, 0.686);
+  margin-bottom: 10px;
+}
+
+#project .works {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#project .works .card {
+  border: none;
+  background-color: whitesmoke;
+  box-shadow: 0px 3px 5px rgb(237, 240, 237);
+
+  height: 60vh;
+}
+
+@media screen and (max-width: 576px) {
+  #project .works .card {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  #project .works {
+    padding-inline: 20px;
+    padding-top: 10px;
+  }
+
+  #project .works .card p {
+    font-size: 14px !important;
+  }
+
+  #project .works .card ul li {
+    font-size: 14px;
+  }
+
+  #project .title {
+    margin-top: 60px;
+    margin-bottom: 15px;
+  }
+}
+
+#project .works .card h2 {
+  color: cadetblue;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(5, 73, 92, 0.686);
+  border-radius: 3%;
+}
+
+#project .works .card p {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0px 5px;
+  margin-top: 10px;
+}
+
+#project .works .card .tech {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+#project .works .card ul li {
+  color: rgba(5, 73, 92, 0.686);
+  font-weight: bold;
+}
+
+#project .works .card ul li span {
+  color: black;
+}
+
+/* Contact */
+
+#contact .title h2 {
+  color: cadetblue;
+  /* font-size: 25px; */
+  font-weight: 600;
+}
+
+#contact .title p {
+  color: rgba(5, 73, 92, 0.686);
+  margin-bottom: 10px;
+}
+
+#contact .thought p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#contact .thought form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .thought form h3 {
+  color: rgba(5, 73, 92, 0.686);
+  font-weight: 600;
+}
+
+#contact .thought form .field {
+  width: 60%;
+  border: 2px solid rgb(208, 206, 206);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+#contact .thought form .field:focus {
+  outline: none;
+}
+
+#contact .thought form button {
+  width: 20%;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  background-color: cadetblue;
+  border: none;
+  border-radius: 3%;
+}
+
+#contact .thought form button:hover {
+  background-color: transparent;
+  color: cadetblue;
+  border: 1px solid cadetblue;
+}
+
+#contact img {
+  width: 100%;
+  padding: 60px;
+}
+
+@media screen and (max-width: 576px) {
+  #contact .thought p {
+    font-size: 14px;
+  }
+
+  #contact .title {
+    margin-bottom: 30px;
+  }
+
+  #contact .thought form .field {
+    width: 90%;
+  }
+
+  #contact .thought form button {
+    width: 50%;
+  }
+}
+
+/* footer */
+#footer {
+  background-color: black;
+  color: white;
+  margin-bottom: 0;
+}
+
+#footer p {
+  margin-bottom: 0;
+  padding: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  #contact {
+    margin-bottom: 0;
+    padding-bottom: 120px;
+    padding-top: 10%;
+  }
+}
